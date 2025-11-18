@@ -1,3 +1,4 @@
+import { Button } from 'primereact/button';
 import React, { useState } from 'react'
 
 function SaludoForm({onSubmit = (nombre, edad) => {}}) {
@@ -19,8 +20,7 @@ function SaludoForm({onSubmit = (nombre, edad) => {}}) {
         <input type="text" className="form-control" onChange={(e)=>setEdad(e.target.value)} value={edad} />
       </div>
       <div className="mb-3">
-        <button onClick={handleClick}
-          className="btn btn-primary">Saludandi</button>
+        <Button label='Acción' severity='info' rounded onClick={handleClick}></Button>
       </div>
     </div>
   )

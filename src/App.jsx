@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Saludo from "./components/Saludo"
 import SaludoForm from "./components/SaludoForm"
+import PokemonContainer from "./containers/PokemonContainer";
 
 function App() {
   const [resultadoNombre, setResultadoNombre] = useState('');
@@ -13,6 +14,7 @@ function App() {
   return <>
     <SaludoForm onSubmit={handleSubmit} ></SaludoForm>
     <Saludo nombre={resultadoNombre} edad={resultadoEdad} ></Saludo>
+    <PokemonContainer></PokemonContainer>
   </>
 }
 
