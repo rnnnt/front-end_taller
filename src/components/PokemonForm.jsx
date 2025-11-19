@@ -20,9 +20,10 @@ function PokemonForm({onCreatePokemon = () => {}}) {
     </div>
   };
   const tipos = [
-    { nombre: 'fuego', imagen: "" },
-    { nombre: 'agua', imagen: "" },
-    { nombre: 'electrico', imagen: "" },
+    { nombre: 'fuego', imagen: "fire" },
+    { nombre: 'agua', imagen: "drop" },
+    { nombre: 'electrico', imagen: "thunder" },
+    { nombre: 'planta', imagen: "plant" },
   ];
   const [nombre, setNombre] = useState('');
   const [numero, setNumero] = useState(1);
